@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styled Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Styled Image</h1>
+        <img src="{{ url_for('static', filename='outputs/' + filename) }}" class="output-image">
+        <a href="{{ url_for('download', filename=filename) }}" class="download-btn">Download Image</a>
+        <a href="{{ url_for('index') }}" class="back-btn">Style Another</a>
+    </div>
+</body>
+</html>

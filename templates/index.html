@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Styler</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your Profile Picture</h1>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <select name="effect">
+                <option value="">-- Choose Style --</option>
+                <option value="grayscale">Grayscale</option>
+                <option value="invert">Invert</option>
+                <option value="enhance">Color Pop</option>
+            </select>
+            <button type="submit">Apply Style</button>
+        </form>
+    </div>
+</body>
+</html>
