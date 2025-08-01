@@ -27,3 +27,8 @@ pip install flask pillow
 
 # Run the app
 python app.py
+
+DEMO VIDEO
+## 📽️ Demo
+
+▶️ [Watch demo video](https://github.com/Saman462/image_uploader/blob/main/Demo.mp4)
